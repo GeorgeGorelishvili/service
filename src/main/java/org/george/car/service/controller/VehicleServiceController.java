@@ -6,7 +6,6 @@ import org.george.car.service.service.VehicleService;
 import org.george.car.service.service.VehicleServiceService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RequiredArgsConstructor

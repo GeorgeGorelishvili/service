@@ -21,8 +21,8 @@ public class VehicleServiceServiceBean implements VehicleServiceService {
         List<VehicleServiceEntity> vehicleServices = new ArrayList<>();
 
         if (Objects.nonNull(userId) || Objects.nonNull(vehicleId)) {
-            StringBuilder countQueryStart = new StringBuilder("select count(v) from VehicleEntity v where 1=1 ");
-            StringBuilder count = new StringBuilder("\"SELECT v FROM VehicleServiceEntity v WHERE 1=1");
+            //StringBuilder countQueryStart = new StringBuilder("select count(v) from VehicleEntity v where 1=1 ");
+            //StringBuilder count = new StringBuilder("SELECT v FROM VehicleServiceEntity v WHERE 1=1");
             StringBuilder sb = new StringBuilder("select count(v) from VehicleEntity v where 1=1");
             Map<String, Object> params = new HashMap<>();
 
@@ -55,8 +55,7 @@ public class VehicleServiceServiceBean implements VehicleServiceService {
 
     @Override
     public List<VehicleServiceEntity> authUserVehicleServices(List<Integer> vehicleIds) {
-        List<VehicleServiceEntity> vehicleServices = em.createQuery("select vs from VehicleServiceEntity vs where vs.vehicle.vehicleId in :vehicleIds", VehicleServiceEntity.class)
+        return em.createQuery("select vs from VehicleServiceEntity vs where vs.vehicle.vehicleId in :vehicleIds", VehicleServiceEntity.class)
                 .setParameter("vehicleIds", vehicleIds).getResultList();
-        return vehicleServices;
     }
 }

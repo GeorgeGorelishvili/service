@@ -36,7 +36,7 @@ public class VehicleEntity {
     @Column(name = "COLOR", columnDefinition = "nvarchar(50)", length = 50)
     private String color;
 
-    @Column(name = "SERVICE_DATE", columnDefinition = "")
+    @Column(name = "SERVICE_DATE")
     private Date serviceDate;
 
     @ManyToOne(fetch = FetchType.EAGER)

@@ -4,8 +4,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.george.car.service.domain.UserEntity;
 import org.george.car.service.domain.UserRole;
-import org.george.car.service.domain.VehicleEntity;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

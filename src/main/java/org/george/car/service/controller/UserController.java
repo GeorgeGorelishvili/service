@@ -5,7 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.george.car.service.domain.UserEntity;
 import org.george.car.service.domain.VehicleServiceEntity;
 import org.george.car.service.service.UserService;
-import org.george.car.service.service.VehicleService;
 import org.george.car.service.service.VehicleServiceService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

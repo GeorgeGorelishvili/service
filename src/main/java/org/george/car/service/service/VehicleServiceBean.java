@@ -136,4 +136,5 @@ public class VehicleServiceBean implements VehicleService {
                 .setParameter("userId", userId).getResultList();
         return vehicleEntityIds;
     }
+
 }
