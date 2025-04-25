@@ -5,12 +5,12 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.8</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>3.4.5</version>
+		<relativePath/> <!-- lookup parent from a repository -->
 	</parent>
 	<groupId>org.george.car</groupId>
 	<artifactId>service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>war</packaging>
 	<name>car-service</name>
 	<description>Demo project for Spring Boot</description>
@@ -71,7 +71,7 @@
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>2.1.0</version>
+			<version>2.8.6</version>
 		</dependency>
 		<dependency>
 			<groupId>io.swagger</groupId>
@@ -101,6 +101,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>car-service</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
